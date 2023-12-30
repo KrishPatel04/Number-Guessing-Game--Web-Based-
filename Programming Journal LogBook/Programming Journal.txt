@@ -1,0 +1,96 @@
+Day 1️⃣ March 15, 2023 [Program Begin]:
+Today, I started working on the basic HTML structure for the number guessing game. I began by creating the basic structure of the webpage usign HTML. I added some metadata such as keywords, description, and author using meta tags.
+
+I created a title for the webpage and added a favicon to it. Linking the CSS and JavaScript files was accomplished by using the link and script tags, respectively.
+
+Next, I created a section for the nagigational links using the nav tag. Using an unordered list to list the navigational links, I was able to display text and hyperlink it to each of the navigational links.
+
+Along the way, CSS code was worked on to ensure a good appearance for the display on the webpage. The CSS code was responsible for styling the navigational menu bar. Specifically, areas such as its position, width, background color, font size, margin, and padding were changed. The original unordered list bullet style was changed to appear as squares and different appearance was added for a "on hover" view.
+
+Lastly, a title / subtitle section was layed out using the header tag that will be filled in tomorrow.
+
+Day 1 saw no real programming struggles or issues.
+
+Day 2️⃣ March 16, 2023:
+HTML code was further developed today by starting with the header section. It contained a centered logo image, followed by text, and a horizontal line.
+
+Additionally, the main tag was added, where a GIF was inserted to show moving images depicting aspects of the game. Initial div tags where drafted for future edits to the CSS program for further organization and asthetics.
+
+Lastly, the first three lines of HTML code were written as the begining of image map implementation.
+
+Day 2 contained mainly straightforward HTML coding and saw close to zero error.
+
+Day 3️⃣ March 17, 2023 [Progress Check #1]:
+Today, I completed majority of the home page. I used the <map> tag to define the clickable areas of a image, using the <area> tag.
+
+Using the usemap attribute, I added the map to the image.
+
+No programming errors resulted today. Day 4 shall be used to begin on the classic number guessing game.
+
+Day 4️⃣ March 20, 2023: 
+New HTML code was added for the game difficulty selection on the classic number guessing game. The user can now click on a dropdown in order to recal the difficulty settings of the classic game.
+
+In order to enable functionality, I began JavaScript code to begin the game's logic. A function called difficulty() was created today. The function's main purpose is to initialize the difficulty to an integer corresponding to game difficulty and also output/display basic imaging and text depending on the user input choice of their desired difficutly. Using the setTimeout() method, asthetics were added.
+
+CSS code was further developed today to ensure a high quality in appearance for the new code HTML code added today. 
+
+One slight program rose today, which was coming up with an effective way to include a parameter in the difficulty function. All the program was initialing running smoothly, I wished to include a parameter on this function to ensure that at least one of my functions had an parameter. As I moved different pieces of my code around, I released that I was simply overlooking this portion of the code, and that I need to more effectively use my time in order to move past this initial difficulty aspect of my game and find a more appropriate time to incoorporate a parameter in my function. 
+
+Overall, decent progress was made and day 5 will be used to begin the random number generator the user will attempt to guess to and also game conditionals. 
+
+Day 5️⃣ March 20, 2023:
+Today was used to begin the classic number guessing game's game logic. I began by initializing a variable rounds to zero (0). This will later be used to determine how many rounds the user took in order to guess the correct number. Next, a random number was created within a certain range based on the difficulty the user selects.
+
+Basic conditionals were started today to determine whether or not the user guesses the correct number. A promt display will appear corresponding to what happens in the game. To ensure the user does not make the same guess multiple times, an array 'playerGuesses' was created to allow the previous user guesses to be added to this array. A conditional if statement will then check to see whether or not the player had already made this guess. 
+
+The first programming issue that arose was with transfering what the user inputs into the textbox on the webpage onto the javascript code. Instead of using the 'querySelector()' method, I switched over the the 'getElementById()' method, which allowed the string data type to be carried over the the JavaScript file and be stored in the variable 'playerGuess'.
+
+Day 6 will be used to find a way to print out whether or not the user's secondary guess is getting closer (warmer) or farther (colder) away from the randum number.
+
+Day 6️⃣ March 21, 2023:
+In-class:
+In-class today, a function 'resetGame()' was created in order for the to reset if the user wishes to reset the game and play again. This was accomplished by using the 'location.reload()' method.
+
+Additionally, two new variables were created to add an objective to the game. the 'maxRounds' variable was created in order to serve as the max limit of guesses, or attempts in order for the user to guess the correct number. The variable is assinged to a integer value using conditionals based on what game difficulty the user choose. The second variable that was initialized was the 'pMoney' variable that will be used to serve as the initial, starting amount of money the user begins with.
+
+HW:
+New ideas for the classic number guessing game were developed today. New game objective was though of such as creating a giving the player more money depending on how few guesses they require. Additionally, a plan for developing a function with parameters was thought by creating a randomNum() function that would use two parameters as a range, and would return a random number is that given range.
+
+Day 7️⃣ March 22, 2023:
+Today, a function with parameters was created to generate a random number more efficently. This was done by using the Math.Floor() & Math.Random() methods, and by passing the min and max values as a range through the function randomNumGenerator() as parameters. The use of a function here helped with code efficency and allowed the program to be prevented from having repeated lines of code multiple times.
+
+The second thing accomplished today was begining the prizes portion of the game. Some additional puesdo-code was layed out to help program the aspects of this function tomorrow.
+
+Day 8️⃣ March 23, 2023:
+Today, a  random number generator function was created. 
+
+The function 'randomNumGenerator()' accepted two crucial parameters to properly run. The parameters 'rangeMin' and 'rangeMax' cooresponded to the range in which the random number was generated. This function was necessary in order to make the program far more efficent and allowed quick accessibilty to a random number for other key features that will be later coded.
+
+In addition to this, some refinement and edits were made to the 'prizes()' function. This function coded basic code about game prize cost, conditionals check the player money against the prize cost, and basic output.
+
+Day 9️⃣ March 24, 2023:
+Today was spend mainly on sound effects and creating game prizes. 
+
+A 2D array 'sounds' was created in order to hold various paths to different sound affects. The sub-array was choosen based on the scenario that the sound affect was needed and the specific element of that particular sub-array was randomly selected from a random number. The use of a random number was incoorporated because it allowed for the user to hear one of three different sound affects each time that game scenario occured, preventing repetitive sounds.
+
+The 'prizes()' function was further developed through the addition of conditional 'if()' statements to produce customized outputs and variable assingments based on particular game scenarios that may exist. In this function, today I added new user promts, allowing them to input the prize they desired. There were a few initial problems within these code segments, because the variables were not properly assigned and initialized, leading to an incorrect output (e.g. printing the user has $0). The 'pMoney' variable was subtracted some the money it took to buy the prize. This 'prizes()' function was called inside the 'playGame()' function initially using the 'setTimeout()' JavaScript method in order to fun after five (5) seconds.
+
+Day 🔟 March 27, 2023:
+Today, necessary CSS edits were made to ensure that the webpage output was a high quality output. CSS edits were made to specific IDs and general things such as buttons, labels, etc. Color, background-color, and size of specific things were the first priority.
+
+Additionally, today was a debugging and program exmaination day due to the game not running correctly. Debugging was accomplished through the use of simply printing out what variable assingments were on the console using 'console.log()'.
+
+The identified problem was excessive, new assignment to the 'randomNum' variable. This lead to a new random number being generated each time the user made a guess, leading to an impossible game. 
+
+This issue was resolved by declaring the 'randomNum' variable as a constant by preeceding the variable name with 'const'.
+
+Day 1️⃣2️⃣ March 30, 2023 [Program End]:
+Today, three main task needed to be complete. Edits to the end game program, such as the 'prizes()' function, music selection updates, and finalized edits and display, through CSS edits.
+
+First, I removed the 'score()' function, that was initially used to give assignment to the pMoney variable. Instead, now I directly ran that particular code prior to the calling of the 'prizes()' function. It was important to run these conditional 'if()' statements right before the 'prizes()' function call because they could give the variable holding player money an integer value.
+
+The second thing today was creating an option for the user to listen to background music while playing the game. A creative aspect in the code was needed, so including an option for the user to select a song to listen to while playing seemed like a good idea. The output of the audio was similarly accomplished to the sound affects previously programmed. 
+
+Lastly, crucial las minute CSS edits were made in order to display an output in a good-looking manner. The home page was added of a background song, and a dark mode feature was created through basic CSS edits through JavaScript code. 
+
+A video of the program was taken in order to capture the program's functionality, input, and output. After making the JavaScript into a PDF file, the written responses were filled out accordingly.

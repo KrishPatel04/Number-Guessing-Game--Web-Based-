@@ -1,0 +1,322 @@
+#everything {
+  background-color: white;
+  color: black;
+}
+
+/* Home page CSS code */
+  /* Navigation Bar */
+  #sideBarMenu {
+    position: fixed; /* Navigational bar stays in place when scrolling */
+    top: 0; /* No additional space above the page */
+    left: 0; /* No additional space left of the page */
+    bottom: 0; /* No additional space below the page */
+    height: auto;
+    width: 200px;
+    background-color: #800000;
+    font-size: 20px;
+    margin: 0;
+    padding: 20px;
+    color: #000000;
+    list-style: none; /* Remove the default bullet points from an unordered list */
+  }
+  
+  #sideBarMenu a { /* <a> tag styling */
+    text-decoration: underline wavy hotpink 2px;
+  }
+  
+  #sideBarMenu a:hover { /* <a> tag on hover styling */
+    text-decoration: underline wavy #6CABDD 2px;
+    background-color: #890000;
+  }
+  
+  .navBarBullets {
+    /* list-style-image: url("Multimedia/Images/Navigational Bar/Nav Bar Bullets.png"); */
+    list-style-type: square;
+  }
+  
+  .navBarText {
+    color: white;
+  }
+
+  /* Header */
+  #margin-left-200px {
+    margin-left: 200px;
+  }
+
+  #margin-left-300px {
+    margin-left: 300px;
+    margin-right: 100px;
+  }
+
+  /* main */
+  #introGIF {
+    width: 29%;
+  }
+
+  #introGIF:hover {
+    width: 32%;
+  }
+
+    /* Pick A Game! */ 
+      #pickAGame-header {
+        color: #CBAFFE;
+      }
+
+      #pickAGame {
+        background-color: #F0F0F0;
+      }
+
+      #pickAGameMap {
+        width: 30%;
+      }
+
+    /* Footer */ 
+      .back-to-top {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #DDDDDD;
+        color: #FF336F;
+        font-family: fantasy;
+        text-decoration: none;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .back-to-top:hover {
+        color: white;
+        background: black;
+      }
+/* P1 CSS code */
+
+
+
+/* Classic */
+  /* Form */ 
+    #difficulty {
+      text-align: center;
+      width: 15%;
+      height: 15%;
+      font-size: 25px;
+      background-color: purple ;
+      color: white;
+      border-radius: 15px;
+    }
+
+    #difficulty:hover {
+      background-color: lightblue;
+    }
+
+  /* Checkbox */ 
+    .switch {
+      width: 500px;
+      height: 500px;
+      background-color: #ff69B4;
+      color: #FFFFFF;
+      border-radius: 5px;
+    }
+
+    .switch:checked {
+      background-color: blue;
+    }
+
+  /* Buttons For Difficulty */ 
+    #easyDifficultyButton {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      width: 100px;
+    }
+
+    #easyDifficultyButton:hover {
+      background-color: hotpink;
+    }
+
+    #averageDifficultyButton {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      background-color: blue;
+      color: white;
+      width: 100px;
+    }
+
+    #mediumDifficultyButton {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      background-color: green;
+      color: white;
+      width: 100px;
+    }
+
+    #hardDifficultyButton {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      background-color: black;
+      color: white;
+      width: 100px;
+    }
+
+    #impossibleDifficultyButton {
+      display: inline-block;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      background-color: purple;
+      color: white;
+      width: 100px;
+    }
+
+  /* Difficulty Pictures */  
+    #easyPic {
+      width: 12%;
+    }
+
+    #averagePic {
+      width: 20%;
+    }
+
+    #mediumPic {
+      width: 20%;
+    }
+
+    #hardPic {
+      width: 20%;
+    }
+
+    #impossiblePic {
+      width: 20%;
+    }
+
+
+    /* 
+    Guess number input box 
+    Change for dark mode 
+    */  
+    #guessedNumberInputBox {
+      text-align: center;
+      background-color: #EEEEEE;
+      color: #222222;
+      height: 25px;
+    }
+
+    #guessedNumberInputBox:hover {
+      background-color: hotpink;
+      color: white;
+    }
+
+  /* Guess number button */ 
+    #guessTheNumButton {
+      border-radius: 15px;
+      background-color: red;
+      color: white;
+      font-size: 15px;
+      height: 45px;
+      width: 100px
+      font-family: Georgia;
+      /* https://www.w3schools.com/cssref/pr_class_cursor.php */
+      cursor: pointer;
+    }
+
+    #guessTheNumButton:hover {
+      background-color: white;
+      color: black;
+    }
+
+
+#ourMission {
+  font-family: calibri;
+  color: #333333;
+}
+
+/* Prize selection */ 
+
+
+label {
+  font-size: 18px;
+  color: #333333;
+}
+
+select {
+  background-color: #DDDDDD;
+  font-size: 16px;
+  color: #333333
+}
+
+button {
+  background-color: #900000;
+  color: #FFFFFF;
+  font-size: 18px;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hotpink;
+}
+
+#buttonSelect:hover {
+  background-color: #006080;
+}
+
+
+#objective-Line1 {
+  color: purple;
+}
+
+
+#objective-Line2 {
+  color: forestgreen;
+}
+
+
+#rulesSummary {
+  color: red;
+}
+
+#rulesSummary:hover {
+  color: orange;
+}
+
+#selectTheGameDifficulty {
+  color: blue;
+}
+
+#selectTheGameDifficulty:hover {
+  color: pink;
+}
+
+
+#darkMode {
+  background-color: #333333;
+  color: #FFFFFF; 
+  border: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding: 7px 15px; 
+  font-size: 17px; 
+  border-radius: 5px;
+}
+
+#startGame-text {
+  color: blue;
+}
+
+#music {
+  background-color: green;
+  color: white;
+  text-align: center;
+}

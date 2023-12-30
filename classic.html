@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<html id="everything">
+
+<head>
+
+  <!-- Specify character encoding used in webpage -->
+  <meta charset="utf-8">
+
+  <!-- Search engine will identity these keywords when user looks for this webpage on the internet. -->
+  <meta name="keywords" content="Number Guessing Games">
+
+  <!-- Provides a brief description of the content of a webpage for search engines. -->
+  <meta name="description" content="All Your Favorite Number Guessing Games">
+
+  <meta name="viewport" content="width=device-width">
+
+  <title>
+    Number Guessing Land
+  </title>
+
+  <!-- HTML Favicon -->
+  <link rel="icon" type="image/x-icon" href="Multimedia/Images/Favicons/Home Page Favicon.png">
+
+  <!-- Link CSS / JS file to home page. -->
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="classic.js">
+  </script>
+
+</head>
+
+<body>
+  <!-- Section of webpage containing navigational links -->
+  <nav>
+    <div id="sideBarMenu">
+      <ul>
+        <li class="navBarBullets">
+          <a href="index.html">
+            <span class="navBarText">
+              Home
+            </span>
+          </a>
+        </li>
+
+
+
+
+
+        <br>
+        <br>
+
+        <li class="navBarBullets">
+          <a href="classic.html">
+            <span class="navBarText">
+              Guess it!
+            </span>
+          </a>
+        </li>
+
+        <br>
+        <br>
+
+        <li class="navBarBullets">
+          <a href="awards.html">
+            <span class="navBarText">
+              Awards
+            </span>
+          </a>
+        </li>
+
+        <br>
+        <br>
+
+        <li class="navBarBullets">
+          <span class="navBarText">
+            <button type="button" onclick="toggleDarkMode()" id="darkMode">
+              Dark Mode!
+            </button>
+          </span>
+          <p style="font-size: 13px; text-align: justify; color: white;">Try it!!!!!!!</p>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </nav>
+
+  <div id="margin-left-200px">
+
+    <header>
+
+      <center>
+
+        <img src="Multimedia/Images/Classic/Classic Number Guessing Header.png" id="backToTop">
+
+        <br>
+
+
+        <audio id="soundsAffects" autoplay>
+        </audio>
+
+        <audio id="musicPlay" autoplay loop>
+        </audio>
+
+
+
+        <p>
+          The Classic Number Guessing Game
+        </p>
+
+        <br>
+
+        <div id="music-Selection">
+
+          <p>
+            Let's start off by selecting some background music 🤘
+          </p>
+
+          <form>
+
+            <label for="music" name="music" required>
+            </label>
+
+            <select id="music" name="music" required>
+
+              <option value="0" id="chooseDropdownDefault">
+                Choose
+              </option>
+
+              <option value="1">
+                Ciara - Set
+              </option>
+
+              <option value="2">
+                Fifth Harmony - Worth It ft. Kid Ink
+              </option>
+
+              <option value="3">
+                Metro Boomin - Superhero (Heroes & Villains)
+              </option>
+
+              <option value="4">
+                Goosebumps - Travis Scott
+              </option>
+
+              <option value="5">
+                Old Town Road - Lil Nas X
+              </option>
+
+            </select>
+
+          </form>
+
+          <p id="startGame-text">
+            Lock in that selection ‼
+          </p>
+
+
+          <label class="switch">
+            <input type="checkbox" id="game-toggle" value="1"
+              onclick="music(parseInt(document.querySelector('#music').value))">
+            <span class="slider round">
+            </span>
+          </label>
+
+        </div>
+
+        <br>
+        <br>
+
+        <button id="audio-toggle" class="audio-button" value=0 onclick="soundEffectsOnOROff()">
+          Sound Effects: ON
+        </button>
+
+        <hr>
+
+      </center>
+
+    </header>
+
+    <main>
+
+      <center>
+
+        <details>
+          <summary>
+
+            <span id="rulesSummary">
+              Rules Summary
+            </span>
+
+          </summary>
+
+          <p>
+            <i>
+              <b>
+                Objective
+              </b>
+            </i>
+          </p>
+
+          <p>
+
+            <span id="objective-Line1">
+              The objective of this game is to guess the the number in the least amount of tried possible!
+            </span>
+
+            <br>
+
+            <span id="objective-Line2">
+              You will be rewarded more money for the smaller number of tries it takes you to guess the number! Money
+              can then be used to purchase prizes!
+            </span>
+
+          </p>
+
+
+        </details>
+
+        <br>
+
+        <!-- https://www.w3schools.com/tags/tag_details.asp -->
+        <details id="difficultyDropdown">
+          <summary>
+
+            <span id="selectTheGameDifficulty">
+              Select the game difficulty...
+            </span>
+
+          </summary>
+          <p>
+            <i>
+              <b>
+                Recall...
+              </b>
+            </i>
+          </p>
+
+          <p>
+            Difficuluty is based on the range from which you will guess numbers from
+          </p>
+
+          <p>
+            🟩 Easy: 1 - 10 <b><strong>|</strong></b>
+
+
+
+            🟦 Average: 1 - 25 <b><strong>|</strong></b>
+
+
+
+            ⬜ Medium: 1 - 50 <b><strong>|</strong></b>
+
+
+
+            🟨 Hard: 1 - 100 <b><strong>|</strong></b>
+
+
+
+            🟥 Impossible: 1 - 1,000 <b><strong>|</strong></b>
+          </p>
+
+
+        </details>
+
+        <br>
+
+        <form>
+
+          <label for="difficulty" name="difficulty" required>
+          </label>
+
+          <select id="difficulty" name="difficulty" required>
+
+            <option value="0" id="chooseDropdownDefault">
+              Choose
+            </option>
+
+            <option value="1">
+              Easy
+            </option>
+
+            <option value="2">
+              Average
+            </option>
+
+            <option value="3">
+              Medium
+            </option>
+
+            <option value="4">
+              Hard
+            </option>
+
+            <option value="5">
+              Impossible...
+            </option>
+
+          </select>
+
+        </form>
+
+
+        <!--
+          <button id = "easyDifficultyButton">
+            Easy
+          </button>
+
+          <button id = "averageDifficultyButton">
+            Average
+          </button>
+
+          <button id = "mediumDifficultyButton">
+            Medium
+          </button>
+
+          <button id = "hardDifficultyButton">
+            Hard
+          </button>
+
+          <button id = "impossibleDifficultyButton">
+            Impossible...
+          </button>
+          -->
+
+        <br>
+
+        <p id="startGame-text">
+          Start Game
+        </p>
+
+
+        <label class="switch">
+          <input type="checkbox" id="game-toggle" value="1"
+            onclick="difficulty(parseInt(document.querySelector('#difficulty').value))">
+          <span class="slider round">
+          </span>
+        </label>
+
+        <br>
+        <br>
+        <br>
+
+        <!-- An image will be added corresponding to the difficulty that the user chooses -->
+        <div id="difficultyPic">
+        </div>
+
+        <h3 id="difficultyGuessingRange">
+        </h3>
+
+        <br>
+
+        <input type="text" id="guessedNumberInputBox" style="display: none;">
+
+        <br>
+        <br>
+
+        <div id="result">
+        </div>
+
+        <br>
+        <br>
+
+        <div id="resultSpecification">
+        </div>
+
+        <div id="resultWarmORCold">
+        </div>
+
+        <br>
+        <br>
+
+        <button type="button" id="guessTheNumButton" onclick="playGame()" style="display: none;">
+          Guess the Number!
+        </button>
+
+        <br>
+        <br>
+
+
+        <div id="chooseAPrize" style="display: none;">
+          <label for="prize">
+            Choose a prize:
+          </label>
+
+          <select id="prize">
+
+            <option value="choose">
+              Choose
+            </option>
+
+            <option value="snickers">
+              Snickers
+            </option>
+
+            <option value="skittles">
+              Skittles
+            </option>
+
+            <option value="stuffedAnimal">
+              Stuffed Animal
+            </option>
+
+            <option value="waterGun">
+              Water Gun
+            </option>
+
+          </select>
+
+          <button id="buttonSelect" onclick="prizes()">
+            Select
+          </button>
+        </div>
+
+
+        <p id="yourAward">
+
+        </p>
+
+        <p id="yourAwardPic">
+
+        </p>
+
+      </center>
+
+
+    </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+      <center>
+        <p>
+          <span class="back-to-top" onclick="resetGame()">
+            Reset!
+          </span>
+        </p>
+      </center>
+    </footer>
+
+  </div>
+
+</body>
+
+</html>
